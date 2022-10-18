@@ -4,6 +4,16 @@ import ddks
 from tqdm.auto import tqdm
 
 
+def rdks(P, T):
+    try:
+        ddks_dist = ddks.methods.rdKS(orthant_method="ranksort")
+    except:
+        print("Warning: not using ranksort method")
+        ddks_dist = ddks.methods.rdKS()
+
+    return ddks_dist(P, T)
+
+
 def bootstrap(P, T, m=None, n_trials=10, poisson=False, use_tqdm=True):
     """Perform bootstrap sampling estimation of the rdKS value between P and T.
 
