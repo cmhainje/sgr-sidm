@@ -1,6 +1,6 @@
 """
 sims.py
-Author: Connor Hainje (connorhainje@nyu.edu)
+Author: Connor Hainje (cmhainje@gmail.com)
 
 One stop shop for running a scan's simulations.
 

@@ -1,6 +1,6 @@
 """
 ic.py
-Author: Connor Hainje (connorhainje@nyu.edu)
+Author: Connor Hainje (cmhainje@gmail.com)
 
 One stop shop for creating a new scan's initial conditions files.
 
@@ -48,9 +48,7 @@ def parse():
         help="ratio of Sgr (halo/bulge) mass",
     )
 
-    submitter = subparsers.add_parser(
-        "submit", help="submit GalIC jobs to SLURM queue"
-    )
+    submitter = subparsers.add_parser("submit", help="submit GalIC jobs to SLURM queue")
     submitter.add_argument(
         "--scan_dir",
         type=str,
